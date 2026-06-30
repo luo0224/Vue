@@ -1,0 +1,14 @@
+@import './base.css';
+
+#app {
+  max-width: 1400px;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  #app {
+    padding: 1rem;
+  }
+}

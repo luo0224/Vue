@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "微软雅黑", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 统一卡片样式 */
+.goods-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 按钮统一配色 */
+.el-button--primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.el-button--success {
+  background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+  border: none;
+  color: #333;
+}
+
+.el-button--danger {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+  border: none;
+  color: #333;
+}
+
+/* 页面标题样式 */
+h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* 表格样式优化 */
+.el-table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 菜单样式优化 */
+.el-menu--horizontal {
+  border-bottom: 2px solid #e4e7ed;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 卡片悬停效果 */
+.el-card:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* 价格文字样式 */
+.price {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* 响应式表格容器 */
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 响应式基础样式 */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .el-menu--horizontal {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .el-card {
+    margin-bottom: 15px;
+  }
+  
+  .el-button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+  
+  .el-table th,
+  .el-table td {
+    font-size: 12px;
+    padding: 8px 4px;
+  }
+  
+  .el-carousel {
+    height: 180px !important;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
+}
